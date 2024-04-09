@@ -1,0 +1,189 @@
+.backgroundImage{
+    width: 100%;
+    margin: 0 auto;
+    border: -1;
+    z-index: -100;
+    position: absolute;
+    top: 0%;
+}
+
+h1{
+font-family: "chorine-large", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+
+h1 a{
+    text-decoration: underline;
+    color: black;
+    margin-left: 18px;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: left;
+  }
+  
+  nav a {
+    text-decoration: underline;
+    color: black;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20pt;
+    font-family: "chorine-large", sans-serif;
+font-weight: 500;
+font-style: normal;
+  }
+  
+  nav li {
+    padding: 20px 60px;
+  }
+
+  .lineBox{
+  width: 450px; 
+  height: 450px; 
+  border: 2px solid black; 
+  margin: 20px;
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  }
+
+  .magnet{
+    width: 23%;
+    cursor: pointer;
+    z-index: 100;
+    position: absolute;
+    left: 57%;
+    top: 37%;
+  }
+  
+  .note{
+    width: 27%;
+    position: absolute;
+    left: 56%;
+    top: 31%;
+  }
+
+  h2{
+    font-family: "century-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 82pt;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+  .infoDiv{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 45px;
+    top: 520px;
+    font-family: "century-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  br{
+    display: none;
+  }
+
+  .memories{
+    width: 55%;
+    position: inherit;
+    top: 30%;
+    left: 20%;
+    font-family: "century-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .xmagnet{
+    width: 20%;
+    cursor: pointer;
+    z-index: 100;
+    position: absolute;
+    left: 57%;
+    top: 30%;
+  }
+
+  @media (max-width: 428px) {
+    h1, h2 {
+        font-size: 20px; 
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center align nav items */
+    }
+  
+    nav li a {
+        padding: 10px; 
+        font-size: 20px;
+    }
+
+    .lineBox {
+        width: 90%;
+        margin: 0 auto; /* Center the line box */
+        left: 5%;
+        top: 70%;
+    }
+
+    .magnet, .note {
+        width: 50%; /* Adjust width to make images fit */
+        position: absolute; /* Use absolute positioning for precise control */
+        left: 50%; /* Start from the middle of the screen */
+        transform: translateX(-50%); /* Center horizontally relative to their width */
+    }
+
+    .magnet {
+        bottom: 60%; 
+        z-index: 101; /* Ensure magnet is above the note */
+    }
+
+    .note {
+        bottom: 55%; /* Adjust this value to control where the note sits */
+        z-index: 100;
+    }
+
+    .infoDiv {
+        width: 80%; 
+        margin: 20px auto; 
+        left:10%
+    }
+
+    .backgroundImage{
+        min-height: 125vh;
+        margin: 0 auto;
+        z-index: -100;
+        position: absolute;
+        top: 0%;
+    }
+
+    h1, h2 {
+        font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+    }
+
+    h1{
+        margin-left: -10px;
+    }
+    
+    nav li {
+        padding: 20px 20px; 
+    }
+}
